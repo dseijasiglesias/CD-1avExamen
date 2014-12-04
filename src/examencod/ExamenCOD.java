@@ -12,6 +12,10 @@ public class ExamenCOD {
         
         numeroPrimo(iN);
 
+        inprimirNumerosPrimos();
+    }
+
+    private static void inprimirNumerosPrimos() {
         for (int x = 2; x < 1000; x++) {
             if (metodoMio(x)) {
                 System.out.print(x + " ");
