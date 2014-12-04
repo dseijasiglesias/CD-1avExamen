@@ -8,34 +8,34 @@ public class ExamenCOD {
      */
     public static void main(String[] args) {
         
-        int iN = 11;
+        int introduceNumero = 11;
         
-        numeroPrimo(iN);
+        numeroPrimo(introduceNumero);
 
         inprimirNumerosPrimos();
     }
 
     private static void inprimirNumerosPrimos() {
         for (int x = 2; x < 1000; x++) {
-            if (metodoMio(x)) {
+            if (metodoPrimo(x)) {
                 System.out.print(x + " ");
             }
         }
     }
 
     private static void numeroPrimo(int iN) {
-        if (metodoMio(iN)) {
+        if (metodoPrimo(iN)) {
             System.out.println("Es numero primo");
         } else {
             System.out.println("NO es numero primo");
         }
     }
 
-    public static boolean metodoMio(int variable) {
+    public static boolean metodoPrimo(int dato) {
         int j = 2;
         boolean aux = true;
-        while ((aux) && (j != variable)) {
-            if (variable % j == 0) {
+        while ((aux) && (j != dato)) {
+            if (dato % j == 0) {
                 aux = false;
             }
             j++;
